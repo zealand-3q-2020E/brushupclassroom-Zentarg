@@ -21,6 +21,8 @@ namespace ClassRoom
                 Console.Write($"Name: {student.Name} | BirthMonth: {student.BirthMonth} | BirthDay : {student.BirthDay} - ");
             }
 
+            classRoom.CountStudentBirthSeasons();
+
             Console.ReadKey();
         }
     }
