@@ -16,7 +16,7 @@ namespace ClassRoom
             classRoom.Students.AddRange(new List<Student>(){new Student("Andreas", 2, 7), new Student("Dom", 11, 9), new Student("Justin", 12, 31)});
 
             Console.WriteLine($"Information regarding classroom {classRoom.Name}:");
-            Console.WriteLine($"> Semester Start Date: {classRoom.SemesterStart.Date}");
+            Console.WriteLine($"> Semester Start Date: {classRoom.SemesterStart.ToShortDateString()}");
             Console.WriteLine("> Students attending:");
             foreach (Student student in classRoom.Students)
             {
