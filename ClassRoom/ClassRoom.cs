@@ -19,5 +19,5 @@ namespace ClassRoom
         public List<Student> Students { get; set; }
         public DateTime SemesterStart { get; set; }
 
-    
+    }
 }
