@@ -11,7 +11,11 @@ namespace ClassRoom
         public Student(string name, int birthMonth, int birthDay)
         {
             Name = name;
+            if (birthMonth < 1 || birthMonth > 12)
+                throw new ArgumentException("Birthmonth is outside the range of 1-12.");
             BirthMonth = birthMonth;
+            if (birthDay < 1 || birthDay > 31)
+                throw new ArgumentException("BirthDay is outside the range of 1-31");
             BirthDay = birthDay;
         }
 
