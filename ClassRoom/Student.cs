@@ -12,10 +12,10 @@ namespace ClassRoom
         {
             Name = name;
             if (birthMonth < 1 || birthMonth > 12)
-                throw new ArgumentException("Birthmonth is outside the range of 1-12.");
+                throw new ArgumentOutOfRangeException(nameof(BirthMonth), "Outside the range of 1-12.");
             BirthMonth = birthMonth;
             if (birthDay < 1 || birthDay > 31)
-                throw new ArgumentException("BirthDay is outside the range of 1-31");
+                throw new ArgumentOutOfRangeException(nameof(BirthDay), "Outside the range of 1-31");
             BirthDay = birthDay;
         }
 
